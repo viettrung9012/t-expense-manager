@@ -23,17 +23,15 @@
     <head>
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>T Expense Manager</title>
-        <script type="text/javascript" language="JavaScript">
- 
+        <script type="text/javascript" language="JavaScript" src="js/index.js">    
         </script>
     </head>
-    <body>
-        <input type="button" value="Add Income"/>
-        <input type="button" value="Add Expense"/>
+    <body onload="loadToDoList()">
+        <input type="button" value="Add To-Do" onclick="createNewToDo()"/>
+        <input type="button" value="Remove Completed Tasks()" onclick="removeCompletedTasks()"/>
         <br/><br/>
-        <hr>
         <table id="dataTable" width="100%" border="1">
- 
+     
         </table>
     </body>
 </html>
